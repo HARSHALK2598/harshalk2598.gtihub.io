@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Starter TODO list Assignment</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+
+  <h1 id="myHeader">TO DO List</h1>
+      <input type="button" id="addButton" onclick="addTask()" value="Add" />
+  <input type="text" id="input" placeholder="enter task..." />
+  <hr>
+      
+  <ul id="tasks">
+    <li>
+      <input type="button" class="done" onclick="markDone(this.parentNode)" value="&#x2713;" />
+      <input type="button" class="remove" onclick="remove(this.parentNode)" value="&#x2715;" />
+      <input type="button" class="important" onclick="important(this.parentNode)" value="!" />
+      make todo list
+    </li>
+    
+      </ul>
+  <hr>
+  
+  <div id="divabout"> </div>
+  <input type="button" value="About" id="aboutButton" onclick="doAbout()"/>
+  <input type="button" value="clear" id="clearButton" onclick="clearAbout()"/>
+  
+      
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
